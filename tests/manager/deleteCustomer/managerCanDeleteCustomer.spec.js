@@ -48,7 +48,7 @@ test('Assert manager can delete customer', async ({ page }) => {
   const postCode = faker.location.zipCode();
 
   await listPage.open();
-  const deleteButtonLast = page.getByRole('row', { name: fullName }).getByRole('button');
+  const deleteButtonLast = page.getByRole('row', { name: fullName }).getByRole('button').last();
   await deleteButtonLast.click();
   await expect(deleteButtonLast).not.toBeVisible();
   await page.reload();

@@ -35,7 +35,7 @@ await listPage.customerTableLastContain(lastName);
 await listPage.customerTableLastContain(postCode);
 
 const fullName = `${firstName} ${lastName} ${postCode}`;
-const accountNumberLast = page.getByRole('row', { name: fullName }).getByRole('cell').nth(3);
+const accountNumberLast = page.getByRole('row', { name: fullName }).last().getByRole('cell').nth(3);
 
 
 await expect(accountNumberLast).toBeEmpty();

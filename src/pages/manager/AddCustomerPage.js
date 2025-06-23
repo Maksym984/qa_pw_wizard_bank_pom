@@ -32,7 +32,7 @@ export class AddCustomerPage {
   async customerButtonClick(){
     await this.customerButton.click();
   }
-  async containValuesAssert (){
+  async containValuesAssert (firstName){
     await expect(this.containValues).containValues(firstName)
   }
 }

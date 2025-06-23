@@ -30,7 +30,7 @@ export class CustomerAccountPage {
   }
 
   async open() {
-    await this.page.goto('file:///angularJs-protractor/BankingProject/%23/account');
+    await this.page.goto('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account');
   }
 
   async assertAccountIdInDropDownHasValue(value) {

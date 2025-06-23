@@ -57,7 +57,7 @@ test('Assert manager can add new customer', async ({ page }) => {
   await managerMainPage.customersButtonClick();
   
   
-const accountNumberLast = page.getByRole('row', { name: fullName }).getByRole('cell').nth(3);
+const accountNumberLast = page.getByRole('row', { name: fullName }).getByRole('cell').last();
 
 
 await expect(accountNumberLast).not.toBeEmpty();
