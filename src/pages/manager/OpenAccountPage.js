@@ -13,7 +13,7 @@ export class OpenAccountPage {
 
   async open() {
     await this.page.goto(
-      '/angularJs-protractor/BankingProject/#/manager/openAccount',
+      'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager/openAccount',
     );
   }
   async currencyButtonClick(){
@@ -23,19 +23,19 @@ export class OpenAccountPage {
     await this.selecterZone.selectOption('Dollar');
   }
   async assertDollarValue (){
-    await expect(this.selecterZone).toContainText('Dollar');
+    await expect(this.selecterZone).toHaveValue('Dollar');
   }
   async selectPound (){
     await this.selecterZone.selectOption('Pound');
   }
   async assertPoundValue (){
-    await expect(this.selecterZone).toContainText('Pound');
+    await expect(this.selecterZone).toHaveValue('Pound');
   }
   async selectRupee (){
     await this.selecterZone.selectOption('Rupee');
   }
    async assertRupeeValue (){
-    await expect(this.selecterZone).toContainText('Rupee');
+    await expect(this.selecterZone).toHaveValue('Rupee');
    }
    async openAccountButtonClick(){
     await this.openAccountButton.click();

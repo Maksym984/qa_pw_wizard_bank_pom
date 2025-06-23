@@ -14,7 +14,7 @@ export class AddCustomerPage {
 
   async open() {
     await this.page.goto(
-      '/angularJs-protractor/BankingProject/#/manager/addCust',
+      'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager/addCust',
     );}
   
   async firstNameFieldFill (text){

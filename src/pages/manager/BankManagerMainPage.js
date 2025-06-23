@@ -10,7 +10,7 @@ export class BankManagerMainPage {
   }
 
   async open() {
-    await this.page.goto('/angularJs-protractor/BankingProject/#/manager');
+    await this.page.goto('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager');
   }
   async waitForOpened() {
     await this.page.waitForURL('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager');
